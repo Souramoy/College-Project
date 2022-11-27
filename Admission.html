@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission</title>
+    <script type="text/javascript">
+        function myFunction(){
+           let  Application= document.getElementById("Application_Form_Number").value;
+           var  Name= document.getElementById("Applicant_name").value;
+           let  Address= document.getElementById("Address").value;
+           let  Branch= document.getElementById("Branch").value;
+           let  Year= document.getElementById("year").value;
+           let  fees= document.getElementById("fees").value;
+           let  Payment= document.getElementById("Payment").value;
+          window.alert("your inputs:" + "      " +"your name is: "+Name+"     "+"your Application Number is : "+Application+"     "+"your Address is : "+Address+"     "+"your Branch is : "+Branch+"     "+"year is : "+Year+"     "+"you done the payment? : "+fees);
+          document.writeln("your inputs:" + "<br> " +"your name is: "+Name+"  <br>   "+"your Application Number is : "+Application+"  <br>   "+"your Address is : "+Address+"   <br>  "+"your Branch is : "+Branch+"   <br>  "+"year is : "+Year+"   <br>  "+"you done the payment? : "+fees+"    <br> "+"your payment reciept is : "+Payment);
+         
+        }
+        
+         </script>
+         <link rel="stylesheet" href="/A.CSS">
+  </head>
+  <body>
+
+    <div class="container">
+      
+        
+        <form id="myForm" onsubmit="myFunction();sendemail(); reset();return false;">
+            <h3>Admission Form</h3>
+        Application Form Number:  <input type="text" name="" id="Application_Form_Number" placeholder="i.e. 1235469870" maxlength="10" required>
+        <br>
+        Name: <input type="name" name="" id="Applicant_name" placeholder="i.e. Monoj Roy" maxlength="100"required >
+        <br>
+       Address: <br><textarea name="" id="Address" cols="30" rows="10"required></textarea>
+        <br>
+        Branch:<input type="text" name="" id="Branch"required>
+        <br>
+       Year: <input type="text" name="" id="year"required>
+       <br>
+       Email: <input type="email" name="" id="email"required>
+       <br>
+       Payment of fees: <input type="text"  id="fees" placeholder="yes/no"required> 
+       <br>
+       Upload Payment Recept: <input type="file" name="" id="Payment">
+       <br>
+       <button type="submit" > Submit Form</button>
+        </form>
+        
+      
+    </div>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "souramoyshee.c.s.t@gmail.com",
+    Password : "E7D69BD9B0E62D078E79BDE73AE4E6BC11C4",
+    To : 'souramoys@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Application details",
+    Body :  "body",
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+  </body>
+</html>
