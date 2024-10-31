@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dept</title>
+    <style>
+        body{
+            background-image: url(https://media.istockphoto.com/id/1285328172/vector/website-seamless-pattern-white-background-with-line-icons.webp?s=612x612&w=is&k=20&c=bZxOmANS2LtgO7hwJklR6Jj9NWASqjIyUA_CNTlty60=);
+
+        }
+        button{
+            padding:40px 40px ;
+            
+            border-radius: 100%;
+            display: inline-block;
+            font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.1s;
+    cursor:pointer;
+    text-decoration: none;
+        }
+        .dept1{
+            background-color: blue;
+            color: white;
+        
+        }
+        .cstdrop{
+            position: relative;
+            display: inline-block;
+        }
+        .cstcontent{
+            display: none;
+            position:absolute;
+            background-color: bisque;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px greenyellow;
+             z-index: 1;
+        }
+        .cstcontent a{
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .cstcontent a:hover{
+            background-color: #ddd;
+        }
+        .cstdrop:hover .cstcontent{
+            display: block;
+        }
+       
+
+        .dept1:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .dept2{
+            background-color: red;
+            color: white;
+            
+        }
+        .dept2:hover:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .dept3{
+            background-color: green;
+            color: white;
+           
+        }
+        .dept3:hover:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .dept4{
+            background-color: rgb(255, 196, 0);
+            color: white;
+           
+        }
+        .dept4:hover:hover{
+            background-color: white;
+            color: black;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        main{
+            position: relative;
+            top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: larger;
+        }
+        header{
+  
+  text-align: center;
+    background-color: #50A47A;
+padding: 1px;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    
+}
+.civildrop{
+    position: relative;
+  display: inline-block;
+}
+.civilcontent {
+  display: none;
+  position: absolute;
+  background-color: bisque;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(216, 213, 19);
+  z-index: 1;
+}
+.civilcontent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.civilcontent a:hover {background-color: #ddd;}
+.civildrop:hover .civilcontent {display: block;}
+    </style>
+</head>
+<body>
+   <header>
+    
+        <h3>Department</h3>
+        <p>chose your Department</p>
+    
+   </header>
+    <main>
+<div class="cstdrop">
+    
+   <button  class="dept1"> CST</button>
+   <div class="cstcontent">
+    <a href="#">1st sem</a>
+    <a href="/cst.html">2nd sem</a>
+    <a href="#">3rd sem</a>
+    <a href="#">4th sem</a>
+    <a href="#">5th sem</a>
+    <a href="#">6th sem</a>
+</div>
+</div>
+    <div class="civildrop">
+        <button  class="dept2">CIIVIL</button>
+        <div class="civilcontent">
+
+        <a href="#">1st sem</a>
+        <a href="/civil.html" target="_blank">2nd sem</a>
+        <a href="#">3rd sem</a>
+        <a href="#">4th sem</a>
+        <a href="#">5th sem</a>
+        <a href="#">6th sem</a>
+        
+
+
+        </div>
+    </div>
+        <button  class="dept3">ELETRICAL</button>
+    <button  class="dept4">MECHANICAL</button>
+ 
+</main>
+    
+    
+    
+    
+</body>
+</html>
